@@ -10,18 +10,18 @@
 <body class="bg-black text-white">
     <header class="flex  items-center justify-between px-2">
       <img src="images/Logo.svg " alt="" class="w-40 h-auto ">
-
+  
       <!--  rendre responsive -->
 
         <div class="flex gap-4 items-center gap-2 ">
 
-          <div class="hidden md:flex gap-4 items-center ">
-            <div><a href="#">home</a></div> 
-            <div><a href="#">about me</a></div>
-            <div><a href="#">services</a></div>
-            <div><a href="#">projects</a></div>
-            <div><a href="#">Testimonials</a></div>
-            <div><a href="#">Contact</a></div>
+          <div class=" hidden md:flex gap-4 items-center ">
+            <div><a href="#home">home</a></div> 
+            <div><a href="#about me">about me</a></div>
+            <div><a href="#services">services</a></div>
+            <div><a href="#projects">projects</a></div>
+            <div><a href="#Testimonials">Testimonials</a></div>
+            <div><a href="#Contact">Contact</a></div>
           </div>
           <div>
             <i class="bi bi-list text-4xl md:hidden"></i>
@@ -35,10 +35,10 @@
 
     </header>
 
-  <main class="my-12 space-y-6">
+  <main >
 
-     <section class="mx-4 my-4 ">
-       <div>
+     <section id="home" class=" mx-4 my-12 ">
+       <div class="md:flex items-center ">
          <div class="my-4 space-y-2"> 
            <div>
              <p class="semi-bold">Hi I am</p>
@@ -57,12 +57,10 @@
             <button class="bg-orange-500 px-4 py-2 rounded-md hover:bg-orange-700 mt-4">hire me</button>
 
            </div>
+            <div>
+              <img src="images/photo-1 (2).png" class="md:w-400 h-auto " alt="">
 
-         
-           <div> 
-            <img src="images/photo-1 (2).png" alt="">
-
-           <div class="flex gap-2 justify-center mt-4" >
+             <div class="flex gap-2 justify-center mt-4" >
               <div><i class="bi bi-facebook text-2xl"></i></div>
               <div><i class="bi bi-x text-2xl"></i></div>
               <div><i class="bi bi-instagram text-2xl"></i></div> 
@@ -74,15 +72,16 @@
        </div>
      </section>
 
-     <section class= "mx-4 my-4">
-      <img src="images/photo-2.png">
+     <section class= "mx-4 my-12 md:flex  items-center">
+     
+      
+        <img src="images/photo-2.png" class="md:w-140 h-auto " >
 
-      <div class="space-y-4">
-        <h2 class="text-6xl capitalize font semi-bold ">about me</h2>
-        <p class="font semi-bold">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        <div class="space-y-4">
+          <h2 class="text-4xl capitalize font semi-boldmx-4 my-12 text-center ">about me</h2>
+         <p class="font semi-bold text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
          Hic voluptatum laudantium minus ullam,
          iure officia fugit, atque, 
-         perspiciatis iusto ducimus earum pariatur expedita sapiente tenetur perferendis possimus illum ex blanditiis.
          </p>
          <div class="font semi-bold space-y-2 text-2xl ">
           <p>ux</p>
@@ -95,98 +94,109 @@
           <img src="images/level (1).png" alt="">
          </div>
 
-      </div>
-
-      <div>
-         <h3 class="text-6xl capitalize font semi-bold ">services</h3>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Voluptatum sunt ut iusto dolor assumenda voluptas rerum tempora officia aliquid enim delectus ipsa magni corporis unde eius amet nostrum, 
-          repellat harum!</p>
-      </div>
-
-       <div class="space-y-6 p-4 ">
-          <div class="bg-white rounded-md ">
-            <div>
-              <img src="images/svg-1.svg" class="w-[80px] h-auto p-4 " alt="">
-            </div>
-            <div class="space-y-6 text-black px-4 py-4 ">
-             <h3>ui/ux</h3>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nobis iste, 
-             perferendis asperiores quasi id, 
-             </p>
-            </div>
-          </div>
         
-          <div  class="bg-white rounded-md ">
-            <div >
-              <img src="images/Vector.svg"class="w-[80px] h-auto   p-4 " alt="">
-            </div>
-            <div class="space-y-6 text-black px-4 py-4">
-              <h3>wweb design</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nobis iste, 
-              perferendis asperiores quasi id, 
-              </p>
-            </div>
-            
-          </div>
-          
-           <div class="bg-white rounded-md ">
-               <div >
-                 <img src="images/svg-3.svg" class="w-[80px] h-auto p-6 " alt="">
+      </div>
+        
+     </section>
+
+    <section id="about me" class= "mx-4 my-12"> 
+      <div  class="space-y-4 ">
+        <h3 id="services" class="text-4xl capitalize font semi-bold text-center ">services</h3>
+        <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni explrepudiandae. 
+         </p>
+     </div>
+
+      <div class="space-y-6 p-4 md:grid grid-cols-2 grid-rows-2 md:space-y-0 gap-4">
+         <div class="bg-white rounded-md ">
+           <div>
+             <img src="images/svg-1.svg" class="w-[80px] h-auto p-4 " alt="">
+           </div>
+           <div class="space-y-6 text-black px-4 py-4 ">
+            <h3>ui/ux</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nobis iste, 
+           
+            </p>
+           </div>
+         </div>
+       
+         <div  class="bg-white rounded-md ">
+           <div >
+             <img src="images/Vector.svg"class="w-[80px] h-auto   p-4 " alt="">
+           </div>
+           <div class="space-y-6 text-black px-4 py-4">
+             <h3>wweb design</h3>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nobis iste, 
+             
+             </p>
+           </div>
+           
+         </div>
+         
+          <div class="bg-white rounded-md ">
+              <div >
+                <img src="images/svg-3.svg" class="w-[80px] h-auto p-6 " alt="">
+               </div>
+               <div class="space-y-6 text-black px-4 py-4">
+                  <h3>app design</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nobis iste, 
+                  
+                  </p>
+               </div>
+              </div>
+              <div class="bg-white rounded-md ">
+
+                 <div>
+                  <img src="images/svg-4 (1).svg" class="w-[80px] h-auto p-4  " alt="">
                 </div>
                 <div class="space-y-6 text-black px-4 py-4">
-                   <h3>app design</h3>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nobis iste, 
-                   perferendis asperiores quasi id, 
-                   </p>
-                </div>
-               </div>
-               <div class="bg-white rounded-md ">
-
-                  <div>
-                   <img src="images/svg-4 (1).svg" class="w-[80px] h-auto p-4  " alt="">
+                  <h3>graphic design</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nobis iste, 
+                  
+                  </p>
                  </div>
-                 <div class="space-y-6 text-black px-4 py-4">
-                   <h3>graphic design</h3>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nobis iste, 
-                   perferendis asperiores quasi id, 
-                   </p>
-                  </div>
-               </div>
-              
-       </div>
+              </div>
+             
+      </div>
     </section>
+    
 
-    <section class="mx-4 my-4 ">
-      <div class="space-y-6 p-4 ">
-        <h3 class="text-6xl capitalize font semi-bold ">mes projects</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-        Illo perferendis iure eos molestiae cupiditate tempora maxime numquam vero assumenda praesentium enim, 
-        fuga, recusandae repellendus quos in blanditiis corporis consequatur quod?</p>
-        <div>
-          <button class="bg-orange-500 px-2 py-1 rounded-md hover:bg-orange-700 mt-4">all </button>
-          <button class="bg-orange-500 px-2 py-1 rounded-md hover:bg-orange-700 mt-4">ui/ux </button>
-          <button class="bg-orange-500 px-2 py-1 rounded-md hover:bg-orange-700 mt-4">web design </button>
-          <button class="bg-orange-500 px-2 py-1 rounded-md hover:bg-orange-700 mt-4">app design </button>
-          <button class="bg-orange-500 px-2 py-1 rounded-md hover:bg-orange-700 mt-4">graphic design </button>
+    <section class="mx-4 my-12 ">
+      <div>
+        <div  class="space-y-4">
+            <h3 id="projects" class="text-4xl capitalize font semi-bold text-center">mes projects</h3>
+            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Illo perferendis iure eos molestiae cupiditate tempora maxime numquam vero assumenda praesentium enim, 
+            fuga, recusandae repellendus quos in blanditiis corporis consequatur quod?</p>
+            <div class="flex mt-4 gap-2 md:justify-center">
+              <p class="bg-white text-black px-2 py-1 gap-4 rounded-md hover:bg-orange-700 ">all </p>
+              <p class="bg-white text-black px-2 py-1 gap-4 rounded-md hover:bg-orange-700 ">ui/ux </p>
+              <p class="bg-white text-black px-2 py-1 gap-4 rounded-md hover:bg-orange-700 ">web design</p>
+              <p class="bg-white text-black px-2 py-1 gap-4 rounded-md hover:bg-orange-700 ">app design </p>
+              <p class="bg-white text-black px-2 py-1 gap-4 rounded-md hover:bg-orange-700 ">graphic design</p>
+            </div>
+          
+          </div>
        </div>
 
-       <div class="space-y-6 p-4 ">
-         <img src="images/Group 24.png " alt="">
+       <div class="space-y-6 p-4  md:grid grid-cols-3 gap-4">
+        
          <div> 
+          <img src="images/Group 24.png " alt="">
           <p  class="text-orange-400">web design</p>
           <p>aircalling landing page design</p>
-        </div>
+         </div>
         
 
-         <img src="images/Group 18499.png " alt="">
+         
          <div>
+          <img src="images/Group 18499.png " alt="">
             <p  class="text-orange-400">web design</p>
             <p>business landing page design</p>
          </div>
          
-         <img src="images/Group 18500.png " alt="">
+         
          <div>
+          <img src="images/Group 18500.png " alt="">
           <p  class="text-orange-400">web design</p>
           <p>ecom web page design</p>
         </div>
@@ -194,26 +204,30 @@
        </div>
 
       </div>
-    </section>
+   
 
-    <sectionc class="mx-4 my-4 ">
+    <sectionc class="mx-4 my-12 ">
 
       <div class="space-y-6 p-4 ">
-       <h3 class="text-6xl capitalize font semi-bold ">Testimonials</h3>
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+       <h3 id="Testimonials" class="text-4xl capitalize font semi-bold text-center">Testimonials</h3>
+       <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
         Quisquam sapiente facilis quo unde vero ab, 
         iure eos ipsum atque minima aut porro pariatur voluptatibus,
          harum quaerat, tempore est possimus rerum.</p>
       </div>
-     <div class="bg-white rounded-md space-y-4 mx-6 p-6">
+     <div class="bg-white rounded-md space-y-4 mx-4 p-2 md:flex items-center">
        <div class="flex justify-center">
-         <img src="images/testimonial.png " class="w-[180px] h-auto p-4 "  alt="">
+         <img src="images/testimonial.png " class="w-80 h-auto p-4 "  alt="">
        </div>
        <div >
-          <p class="mx-d text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Dolorem officia maiores, quae eum et aliquam earum voluptatem quisquam, 
+          <p class="mx-d text-black">
+            <span class="text-orange-500 text-2xl  ">"</span>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+             Ab placeat sint ut repudiandae sapiente autem omnis laborum facilis id asperiores itaque a, 
+            
+          <span class="text-orange-500 text-2xl">"</span>
          </p>
-          <h3 class="mx-d text-black text-gray-600">Name</h3>
+          <h3 class="mx-d text-black text-gray-900 font-bold">Name</h3>
           <p class="mx-d text-black text-gray-600">Ceo</p>
        </div>
        
@@ -221,20 +235,20 @@
 
     </section>
      
-    <section class="mx-4 my-4 ">
-      <div>
-          <h3 class="text-6xl capitalize font semi-bold ">lets design together</h3>
-          <p class="mx-d">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+    <section class="mx-4 my-12 space-y-4">
+      <div class="space-y-4">
+          <h3 id="lets design together" class="text-4xl capitalize font semi-bold text-center">lets design together</h3>
+          <p class="mx-d text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
             Reprehenderit excepturi illo animi! Illum accusantium ipsam placeat enim, 
             in nobis repellendus porro molestias iusto modi quia,
       </div>
 <br>
-      <div > 
-        <input class="bg-white text-gray-800 px-2 py-4 rounded-md " type="email" placeholder="enter your email">
-      </div>
-      <div>
-        <button class="bg-orange-500 px-2 py-1 rounded-md hover:bg-orange-700 mt-4">Contact me</button>
-      </div>
+     <form action="" class="flex gap-4 items-center md:justify-center">
+       <input class=" bg-white text-gray-800 px-2 py-2 rounded-md w-60 " type="email" placeholder="enter your email" required>
+       <button type="submit" class="bg-orange-500 px-2 py-2 rounded-md hover:bg-orange-700 ">Contact me</button>
+    </form>
+        
+      
     </section>
      
   </main>
@@ -245,13 +259,13 @@
         <img src="images/Logo.svg" class="w-40 h-auto " alt="">
       </div>
 
-      <div class="gap-1 flex justify-between">
-        <div><a href="#">home</a></div> 
-        <div><a href="#">about </a></div>
-        <div><a href="#">services</a></div>
-        <div><a href="#">projects</a></div>
-        <div><a href="#">Testimonials</a></div>
-       <div><a href="#">Contact</a></div>
+      <div class="gap-2 flex justify-between">
+        <div><a href="#home">home</a></div> 
+        <div><a href="#about">about </a></div>
+        <div><a href="#services">services</a></div>
+        <div><a href="#projects">projects</a></div>
+        <div><a href="#Testimonials">Testimonials</a></div>
+       <div><a href="#Contact">Contact</a></div>
       </div>
      
       <div class="flex gap-2 justify-center mt-4">
@@ -260,7 +274,7 @@
           <i class="bi bi-instagram text-2xl"></i>
           <i class="bi bi-linkedin text-2xl"></i>
       </div>
-     <div class="flex gap-2 justify-center mt-4"> 
+     <div class="flex gap-2 justify-center mt-4 bg-gray-400"> 
        <p >@2023 </p>
        <p class="text-orange-400 semi-bold text-xl">fawziUiUx</p> 
        <p>all rights reserved,inc</p>
